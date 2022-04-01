@@ -1,4 +1,4 @@
-from student.student import Student, get_student_with_more_classes
+from student.student import Student #get_student_with_more_classes
 
 def test_init():
     name = "Ada Lovelace"
@@ -42,3 +42,7 @@ def test_get_student_with_more_classes():
     )
 
     # TODO: write assertions
+    actual = get_student_with_more_classes(charles, ada)
+
+    #assert
+    assert actual == ada
